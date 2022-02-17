@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="validar.js"></script>
+</head>
+
+<body>
+
+<form id="form1" action="register.php" method="post" onsubmit="return validar();"  enctype="multipart/form-data">
+
+
+
+<div class="container">
+    
+        <div class="modal-header">
+             <h5>Crear Usuario</h5>
+         </div>
+        <div class="row">
+
+    <div class="col-md-6">
+        <label name="" for="exampleFormControlInput1" class="form-label">Nombres</label>
+        <input  id="nombre" name="nombre" type="text" class="form-control mayus" id="exampleFormControlInput1"  >
+    </div>
+
+    <div class="col-md-6">
+        <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+        <input id="apellido"name="apellido" type="text" class="form-control mayus" id="exampleFormControlInput1"  >
+    </div>
+
+    <div class="col-md-6">
+        <label name="cedula" for="exampleFormControlInput1" class="form-label">Cedula</label>
+        <input id="cedula" name="cedula" type="text" class="form-control mayus" id="exampleFormControlInput1" >
+    </div>
+
+    <div class="col-md-6">
+        <label name="movil" for="exampleFormControlInput1" class="form-label">Movil</label>
+        <input name="movil" id="movil"type="text" class="form-control" id="exampleFormControlInput1" >
+    </div>
+
+    <div class="col-md-6">
+        <label for="exampleFormControlInput1" class="form-label">Correo</label>
+        <input id="correo"name="correo" type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" >
+    </div>
+
+    <div class="col-md-6">
+        <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
+        <input id="contraseña" name="contraseña" type="password" class="form-control" id="exampleFormControlInput1" >
+    </div>
+    
+    <div class="container">
+        <br>
+         <div class="row justify-content-md-center">       
+            <input class="form-control" accept=".jpg,.png,.jpeg,.gif" type="file" id="formFile">
+        </div>
+    </div>
+
+    <div class="container">
+        <br>
+        <div class=" row justify-content-md-center">
+            
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+        </div>
+    </div>
+    
+    
+
+
+
+</form>
+</body>
+</html>

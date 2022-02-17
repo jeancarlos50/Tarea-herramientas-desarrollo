@@ -1,0 +1,45 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>VaidrollTeamLogin8</title>
+     <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<div class="caja1">
+<form method="post" action="login.php">
+<div class="formtlo">Login</div>
+<div class="ub1">&#128273; Ingresar usuario</div>
+<input type="text" name="correo" placeholder="Ingresar correo">
+<div class="ub1">&#128274; Ingresar contraseña</div>
+
+<input type="password" name="contraseña" id="contraseña" placeholder="Ingresar password">
+
+<div class="ub1">
+<input type="checkbox" onclick="verpassword()" >Mostrar contraseña
+ </div>
+
+
+<div align="center">
+<input type="submit" value="Ingresar">
+
+
+</div>
+</form>
+</div>
+</body>
+<script>
+  function verpassword(){
+      var tipo = document.getElementById("txtpassword");
+      if(tipo.type == "password")
+	  {
+          tipo.type = "text";
+      }
+	  else
+	  {
+          tipo.type = "password";
+      }
+  }
+</script>
+</html>
